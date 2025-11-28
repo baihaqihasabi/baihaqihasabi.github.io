@@ -726,63 +726,49 @@ p {
 /* End Media Query For Tablet */
 
 /* Media Query For Desktop */
-@media only screen and (min-width: 1200px) {
-	/* header */
-	#header .hamburger {
-		display: none;
-	}
-	#header .nav-list ul {
-		position: initial;
-		display: block;
-		height: auto;
-		width: fit-content;
-		background-color: transparent;
-	}
-	#header .nav-list ul li {
-		display: inline-block;
-	}
-	#header .nav-list ul li a {
-		font-size: 1.8rem;
-	}
-	#header .nav-list ul a:after {
-		display: none;
-	}
-	/* End header */
-
-	#services .service-bottom .service-item {
-		flex-basis: 22%;
-		margin: 1.5%;
-	}
-}
-/* End  Media Query For Desktop */
-/* ==== RESPONSIVE FIX FOR PROJECT SECTION ==== */
-@media (max-width: 768px) {
+/* ==== DESKTOP OPTIMIZATION ==== */
+@media (min-width: 1024px) {
   .project-item {
-    flex-direction: column !important; 
-    text-align: left;
-    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 0;
   }
 
   .project-info {
-    width: 100%;
+    flex: 1;
+    padding-right: 20px;
   }
 
   .project-img {
-    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
   }
 
   .project-img img {
     width: 100%;
-    height: auto;
+    height: 350px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
   }
 
-  /* supaya tidak mepet */
+  .projects-header h1 {
+    font-size: 3.5rem;
+  }
+
+  .project-item h1 {
+    font-size: 2.5rem;
+  }
+
+  .project-item h2 {
+    font-size: 1.8rem;
+    opacity: 0.9;
+  }
+
   .project-item p {
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 1.2rem;
+    line-height: 1.7;
   }
 }
-
-
