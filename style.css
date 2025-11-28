@@ -755,3 +755,34 @@ p {
 	}
 }
 /* End  Media Query For Desktop */
+/* ==== RESPONSIVE FIX FOR PROJECT SECTION ==== */
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column !important; 
+    text-align: left;
+    gap: 10px;
+  }
+
+  .project-info {
+    width: 100%;
+  }
+
+  .project-img {
+    width: 100%;
+  }
+
+  .project-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  /* supaya tidak mepet */
+  .project-item p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+
