@@ -798,5 +798,34 @@ p {
     border-radius: 80%; /* atau 50% jika ingin bentuk bulat */
     display: block;
 }
+.contact-item {
+  background-image: url("img/bg.png"); /* ganti dengan foto kamu */
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 30px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5); /* gelap biar teks kebaca */
+  z-index: 1;
+}
+
+.contact-item * {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 
